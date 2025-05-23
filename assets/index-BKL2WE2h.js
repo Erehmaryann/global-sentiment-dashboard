@@ -1,0 +1,2 @@
+import{j as e}from"./index-DQevRufL.js";import{C as r,a as s,b as n,d as t,c as a}from"./card-C1dURBz0.js";function d(){return e.jsx("div",{style:{margin:"20px 0px"},className:"w-full",children:e.jsxs(r,{children:[e.jsxs(s,{children:[e.jsx(n,{children:"Reports"}),e.jsx(t,{children:"Generate and export sentiment reports"})]}),e.jsx(a,{children:e.jsx("p",{className:"text-muted-foreground",children:"Report generation and export features would be implemented here."})})]})})}export{d as default};
+//# sourceMappingURL=index-BKL2WE2h.js.map

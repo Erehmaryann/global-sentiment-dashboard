@@ -1,0 +1,2 @@
+import{j as e}from"./index-DQevRufL.js";import{C as s,a as r,b as n,d as i,c as a}from"./card-C1dURBz0.js";function d(){return e.jsx("div",{style:{margin:"20px 0px"},className:"w-full",children:e.jsxs(s,{children:[e.jsxs(r,{children:[e.jsx(n,{children:"Settings"}),e.jsx(i,{children:"Configure your dashboard preferences"})]}),e.jsx(a,{children:e.jsx("p",{className:"text-muted-foreground",children:"Settings and configuration options would be implemented here."})})]})})}export{d as default};
+//# sourceMappingURL=index-TfjZ00Wh.js.map
