@@ -80,7 +80,6 @@ const routes = [
 export const router = createBrowserRouter(routes, {
   future: {
   },
-  basename: import.meta.env.DEV ? "/" : "/global-sentiment-dashboard",
 });
 
 // eslint-disable-next-line react-refresh/only-export-components

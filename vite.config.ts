@@ -6,9 +6,8 @@ import path from "path";
 /// <reference types="vite/client" />
 
 // https://vite.dev/config/
-export default defineConfig(({ mode }) => ({
+export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: mode === "production" ? "/global-sentiment-dashboard/" : "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -30,4 +29,4 @@ export default defineConfig(({ mode }) => ({
       },
     },
   },
-}));
+});

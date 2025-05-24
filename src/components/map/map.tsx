@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useRef, useEffect, useState } from "react";
 import * as am5 from "@amcharts/amcharts5";
 import * as am5map from "@amcharts/amcharts5/map";
@@ -56,7 +57,6 @@ const Map = ({ data, sentimentType, onRegionClick, onRegionHover }: MapProps) =>
       const polygonSeries = chart.series.push(
         am5map.MapPolygonSeries.new(root, {
           geoJSON: am5geodata_worldLow,
-          exclude: ["AQ"], // Exclude Antarctica
           fill: am5.color(0xdddddd),
           stroke: am5.color(0xffffff),
           calculateAggregates: true,
@@ -90,7 +90,6 @@ const Map = ({ data, sentimentType, onRegionClick, onRegionHover }: MapProps) =>
       // Add click and hover events
       polygonSeries.mapPolygons.template.events.on("click", (ev) => {
         const dataItem = ev.target.dataItem;
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const data = dataItem?.dataContext as any;
 
         if (data) {
@@ -107,7 +106,6 @@ const Map = ({ data, sentimentType, onRegionClick, onRegionHover }: MapProps) =>
 
       polygonSeries.mapPolygons.template.events.on("pointerover", (ev) => {
         const dataItem = ev.target.dataItem;
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const data = dataItem?.dataContext as any;
 
         if (data) {
@@ -155,7 +153,6 @@ const Map = ({ data, sentimentType, onRegionClick, onRegionHover }: MapProps) =>
     polygonSeries.mapPolygons.template.set("fill", am5.color(0xdddddd));
 
     polygonSeries.mapPolygons.template.adapters.add("fill", (fill, target) => {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const dataContext = target.dataItem?.dataContext as any;
       if (dataContext && dataContext.value !== undefined) {
         return colorScale.getIndex(dataContext.value);
