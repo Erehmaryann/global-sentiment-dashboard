@@ -3,10 +3,12 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
+/// <reference types="vite/client" />
+
 // https://vite.dev/config/
-export default defineConfig({
-  // base: "/global-sentiment-dashboard/",
+export default defineConfig(({ mode }) => ({
   plugins: [react(), tailwindcss()],
+  base: mode === "production" ? "/global-sentiment-dashboard/" : "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -28,4 +30,4 @@ export default defineConfig({
       },
     },
   },
-});
+}));
