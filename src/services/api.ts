@@ -1,8 +1,8 @@
 import Papa from "papaparse";
 import type { SentimentData } from "@/types";
 
-const CSV_URL =
-  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/geo_sentiments-FL68nnKEBDceoyglxqfCrkiEgPrffT.csv";
+// const CSV_URL = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/geo_sentiments-FL68nnKEBDceoyglxqfCrkiEgPrffT.csv";
+const CSV_URL = "/geo_sentiments.csv";
 
 export async function fetchSentimentData(): Promise<SentimentData[]> {
   try {
