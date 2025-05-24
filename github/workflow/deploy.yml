@@ -3,33 +3,30 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # Deploy on push to main
-
-permissions:
-  contents: write # Required for GitHub Pages
+      - main # Triggers deployment when you push to main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+    steps:
+      - name: 📦 Checkout code
+        uses: actions/checkout@v3
+
+      - name: 🧰 Setup Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 22
           cache: "pnpm"
 
-      - name: Install Dependencies
-        run: |
-          corepack enable
-          pnpm install
+      - name: 📥 Install dependencies
+        run: pnpm install
 
-      - name: Build Project
-        run: pnpm build
+      - name: 🛠 Build project
+        run: pnpm run build
 
-      - name: Deploy to GitHub Pages
-        run: pnpm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: 🚀 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
