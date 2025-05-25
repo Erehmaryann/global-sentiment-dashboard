@@ -5,7 +5,7 @@
 
 ## Overview
 
-Global Sentiment Dashboard is an interactive visualisation tool that displays sentiment data across different regions and countries worldwide. The dashboard provides a comprehensive view of sentiment trends, allowing users to analyse positive, neutral, and negative sentiment distributions geographically.
+Global Sentiment Dashboard is an interactive visualisation tool that displays sentiment data across different regions and countries worldwide. The dashboard provides a comprehensive view of sentiment trends, allowing users to geographically analyse positive, neutral, and negative sentiment distributions.
 
 ## Features
 
@@ -76,7 +76,7 @@ pnpm run build
 yarn build
 \`\`\`
 
-The build artifacts will be stored in the `dist/` directory.
+The build artefacts will be stored in the `dist/` directory.
 
 ## Usage
 
@@ -105,7 +105,7 @@ The dashboard provides several ways to visualise sentiment data:
 1. **Global Map**: Color-coded representation of sentiment across regions
 2. **Stats Cards**: Quick overview of key metrics
 3. **Region Details**: Detailed breakdown of sentiment for selected regions
-4. **Tabs**: Additional analytics views including trends and insights
+4. **Tabs**: Additional analytics views, including trends and insights
 
 ## Project Structure
 
@@ -176,7 +176,6 @@ The project uses Tailwind CSS for styling. To add or modify styles:
 
 1. Use Tailwind utility classes directly in components
 2. For custom styles, add them to the appropriate CSS file
-3. For theme customisation, modify `tailwind.config.js`
 
 ## Contributing
 
@@ -185,10 +184,6 @@ The project uses Tailwind CSS for styling. To add or modify styles:
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
