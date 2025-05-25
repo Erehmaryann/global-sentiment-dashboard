@@ -1,6 +1,7 @@
 # Global Sentiment Dashboard
 
-![Dashboard Preview]("@/assets/dashboard-photo.png")
+![Dashboard Preview - Lightmode]("/dashboard-photo.png")
+![Dashboard Preview - Darkmode]("/dark-dashboard.png")
 
 ## Overview
 

@@ -42,13 +42,12 @@ export default function Overview() {
 
   return (
     <div
-      style={{ margin: "20px 0px" }}
-      className="w-full">
+      className="w-full space-y-5">
       {/* Stats Overview */}
       <StatsCards data={data} />
 
       {/* Main Dashboard */}
-      <div style={{ margin: "20px 0px" }} className="grid gap-4 md:grid-cols-4 w-full">
+      <div className="grid gap-4 md:grid-cols-4 w-full">
         <div className="md:col-span-3 w-full">
           <Card>
             <CardHeader>

@@ -10,10 +10,9 @@ interface ControlsProps {
 const Controls = ({ selectedSentimentType, onSentimentTypeChange }: ControlsProps) => {
   return (
     <div
-      style={{ padding: "16px", gap: "16px" }}
-      className="flex flex-wrap items-center bg-white rounded-lg shadow-sm md:w-auto w-full">
+      className="flex flex-wrap items-center bg-white rounded-lg shadow-sm md:w-auto w-full p-4">
       <div className="w-full">
-        <label style={{ marginBottom: "4px" }} htmlFor="sentiment-type" className="block text-sm font-medium text-gray-700">
+        <label htmlFor="sentiment-type" className="block text-sm mb-1 font-medium text-gray-700">
           Sentiment View
         </label>
         <div className="flex gap-2 flex-wrap">
@@ -70,7 +69,7 @@ const SentimentButton = ({ type, selected, onClick, children }: SentimentButtonP
   };
 
   return (
-    <button style={{ padding: "0 12px" }} type="button" onClick={onClick} className={`${baseClasses} ${typeClasses[type]}`} aria-pressed={selected}>
+    <button type="button" onClick={onClick} className={`${baseClasses} ${typeClasses[type]}`} aria-pressed={selected}>
       {children}
     </button>
   );

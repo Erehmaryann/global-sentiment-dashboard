@@ -11,11 +11,10 @@ const Legend = ({ sentimentType }: LegendProps) => {
     <div className="flex flex-col">
       <h2 className="text-sm font-medium mb-2">Legend</h2>
       <div
-        style={{ gap: "16px" }}
-        className="flex items-center">
+        className="flex items-center gap-4">
         {legendItems.map((item, index) => (
           <div key={index} className="flex items-center">
-            <div className="w-4 h-4 rounded" style={{ backgroundColor: item.color, marginRight: "4px" }} aria-hidden="true" />
+            <div className="w-4 h-4 mr-1 rounded" style={{ backgroundColor: item.color }} aria-hidden="true" />
             <span className="text-sm">{item.label}</span>
           </div>
         ))}

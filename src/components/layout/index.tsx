@@ -14,14 +14,11 @@ import { Separator } from "@/components/ui/separator";
 
 export default function DashboardLayout() {
   return (
-    <div className="flex min-h-screen w-full">
+    <div className="flex min-h-screen w-full bg-white dark:bg-gray-900 dark:text-white">
       <AppSidebar />
       <SidebarInset>
         <Header />
         <div
-          style={{
-            padding: "5px 16px",
-          }}
           className="flex w-full flex-1 flex-col space-y-5 p-4 pt-0">
           <div
             className="flex items-center gap-2">

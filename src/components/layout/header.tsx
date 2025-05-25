@@ -16,15 +16,12 @@ import { Link } from "react-router";
 export function Header() {
   return (
     <header
-      style={{
-        padding: "10px",
-      }}
-      className="flex w-full sm:h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
+      className="flex w-full p-2.5 sm:h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
       <div className="flex sm:items-center sm:flex-row flex-col gap-3 w-full justify-between">
         {/* Search */}
-        <div className="flex-1 sm:max-w-md relative ml-auto">
+        <div className="flex-1 sm:max-w-md relative">
           <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-          <Input type="search" placeholder="Search regions, countries..." className="pl-8 placeholder:pl-8 rounded" />
+          <Input type="search" placeholder="Search regions, countries..." className="pl-8 rounded dark:placeholder:text-white" />
         </div>
 
         {/* Actions */}

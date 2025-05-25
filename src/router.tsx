@@ -11,7 +11,7 @@ import { SidebarProvider } from "./components/ui/sidebar";
 const Overview = lazy(() => import("./app/dashboard/overview"));
 const Analytics = lazy(() => import("./app/dashboard/analytics"));
 const Reports = lazy(() => import("./app/dashboard/reports"));
-const Settings = lazy(() => import("./app/dashboard//settings"));
+const Settings = lazy(() => import("./app/dashboard/settings"));
 
 const routes = [
   {
@@ -67,7 +67,7 @@ const routes = [
           </p>
           <button
             onClick={() => (window.location.href = "/")}
-            className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+            className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 cursor-pointer"
           >
             Go Home
           </button>

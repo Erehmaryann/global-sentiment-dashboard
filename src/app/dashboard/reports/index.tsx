@@ -3,7 +3,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 export default function ReportsPage() {
   return (
     <div
-      style={{ margin: "20px 0px" }}
       className="w-full">
       <Card>
         <CardHeader>
