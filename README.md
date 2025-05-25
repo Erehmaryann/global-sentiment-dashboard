@@ -5,11 +5,11 @@
 
 ## Overview
 
-Global Sentiment Dashboard is an interactive visualization tool that displays sentiment data across different regions and countries worldwide. The dashboard provides a comprehensive view of sentiment trends, allowing users to analyze positive, neutral, and negative sentiment distributions geographically.
+Global Sentiment Dashboard is an interactive visualisation tool that displays sentiment data across different regions and countries worldwide. The dashboard provides a comprehensive view of sentiment trends, allowing users to analyse positive, neutral, and negative sentiment distributions geographically.
 
 ## Features
 
-- **Interactive Map Visualization**: Explore sentiment data with an interactive global map
+- **Interactive Map Visualisation**: Explore sentiment data with an interactive global map
 - **Multiple Sentiment Views**: Toggle between overall, positive, neutral, and negative sentiment displays
 - **Detailed Region Analysis**: Click on regions to view detailed sentiment breakdowns
 - **Responsive Design**: Fully responsive interface that works on desktop and mobile devices
@@ -21,7 +21,7 @@ Global Sentiment Dashboard is an interactive visualization tool that displays se
 
 - **Frontend**: React, TypeScript, Tailwind CSS
 - **Routing**: React Router v6
-- **Visualization**: amCharts 5
+- **Visualisation**: amCharts 5
 - **State Management**: React Context API
 - **Styling**: Tailwind CSS with shadcn/ui components
 - **Animation**: Framer Motion
@@ -98,9 +98,9 @@ The build artifacts will be stored in the `dist/` directory.
 - Use the sentiment type controls to switch between different sentiment views
 - Hover over regions to see quick information
 
-### Data Visualization
+### Data Visualisation
 
-The dashboard provides several ways to visualize sentiment data:
+The dashboard provides several ways to visualise sentiment data:
 
 1. **Global Map**: Color-coded representation of sentiment across regions
 2. **Stats Cards**: Quick overview of key metrics
@@ -118,7 +118,7 @@ sentiment-dashboard/
 │ │ └── dashboard/ # Dashboard pages
 │ ├── components/ # Reusable components
 │ │ ├── layout/ # Layout components
-│ │ ├── Map/ # Map visualization components
+│ │ ├── Map/ # Map visualisation components
 │ │ └── ui/ # UI components (shadcn/ui)
 │ ├── hooks/ # Custom React hooks
 │ ├── lib/ # Utility functions
@@ -176,7 +176,7 @@ The project uses Tailwind CSS for styling. To add or modify styles:
 
 1. Use Tailwind utility classes directly in components
 2. For custom styles, add them to the appropriate CSS file
-3. For theme customization, modify `tailwind.config.js`
+3. For theme customisation, modify `tailwind.config.js`
 
 ## Contributing
 
@@ -192,6 +192,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 
-- Data visualization powered by [amCharts 5](https://www.amcharts.com/)
+- Data visualisation powered by [amCharts 5](https://www.amcharts.com/)
 - UI components from [shadcn/ui](https://ui.shadcn.com/)
 - Icons from [Lucide React](https://lucide.dev/)
