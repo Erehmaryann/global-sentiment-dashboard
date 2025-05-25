@@ -1,7 +1,7 @@
 # Global Sentiment Dashboard
 
-![Dashboard Preview - Lightmode]("/dashboard-photo.png")
-![Dashboard Preview - Darkmode]("/dark-dashboard.png")
+![Dashboard Preview - Darkmode](<img width="1440" alt="dark-dashboard" src="https://github.com/user-attachments/assets/8171940b-c2aa-4179-973a-f883355552f7" />)
+![Dashboard Preview - Lightmode](<img width="1440" alt="dashboard-photo" src="https://github.com/user-attachments/assets/07fb6709-419b-406f-94f3-c66b011a2e24" />)
 
 ## Overview
 
