@@ -63,7 +63,7 @@ export default function Overview() {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="h-[600px] w-full">
+              <div className="h-[500px] w-full">
                 <Map
                   data={data}
                   sentimentType={selectedSentimentType}

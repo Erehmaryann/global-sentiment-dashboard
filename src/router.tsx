@@ -6,12 +6,12 @@ import authRoutes from "./app/auth/routes";
 import DashboardLayout from "./components/layout";
 import { AuthProvider } from "./components/auth/auth-provider";
 import { SidebarProvider } from "./components/ui/sidebar";
+import analyticsRoutes from "./app/dashboard/analytics/routes";
+import reportsRoutes from "./app/dashboard/reports/routes";
+import settingsRoutes from "./app/dashboard/settings/routes";
 
 // Lazy load components
 const Overview = lazy(() => import("./app/dashboard/overview"));
-const Analytics = lazy(() => import("./app/dashboard/analytics"));
-const Reports = lazy(() => import("./app/dashboard/reports"));
-const Settings = lazy(() => import("./app/dashboard/settings"));
 
 const routes = [
   {
@@ -31,30 +31,9 @@ const routes = [
             path: "/overview",
             Component: Overview,
           },
-          {
-            path: "/analytics",
-            Component: Analytics,
-          },
-          {
-            path: "/analytics/:type",
-            Component: Analytics,
-          },
-          {
-            path: "/reports",
-            Component: Reports,
-          },
-          {
-            path: "/reports/:reportType",
-            Component: Reports,
-          },
-          {
-            path: "/settings",
-            Component: Settings,
-          },
-          {
-            path: "/settings/:section",
-            Component: Settings,
-          },
+          analyticsRoutes,
+          reportsRoutes,
+          settingsRoutes
         ],
       },
     ],
