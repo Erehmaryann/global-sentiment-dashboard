@@ -20,7 +20,7 @@ export default defineConfig({
   build: {
     outDir: "dist",
     sourcemap: true,
-    // Optimize for performance
+    // Optimise for performance
     minify: "terser",
     terserOptions: {
       compress: {

@@ -18,9 +18,9 @@ interface MapProps {
 const Map = ({ data, sentimentType, onRegionClick, onRegionHover }: MapProps) => {
   const chartRef = useRef<am5.Root | null>(null);
   const chartDivRef = useRef<HTMLDivElement>(null);
-  const [isInitialized, setIsInitialized] = useState(false);
+  const [isInitialised, setIsInitialised] = useState(false);
 
-  // Initialize the map
+  // Initialise the map
   useEffect(() => {
     // Clean up function to dispose of the chart when component unmounts
     return () => {
@@ -35,7 +35,7 @@ const Map = ({ data, sentimentType, onRegionClick, onRegionHover }: MapProps) =>
   useEffect(() => {
     if (!chartDivRef.current) return;
 
-    // Only initialize the chart once
+    // Only initialise the chart once
     if (!chartRef.current) {
       // Create root element
       const root = am5.Root.new(chartDivRef.current);
@@ -127,14 +127,14 @@ const Map = ({ data, sentimentType, onRegionClick, onRegionHover }: MapProps) =>
       // Store references
       chartRef.current = root;
 
-      // Set initialization flag
-      setIsInitialized(true);
+      // Set initialisation flag
+      setIsInitialised(true);
     }
   }, [onRegionClick, onRegionHover]);
 
   // Update the map data when data or sentiment type changes
   useEffect(() => {
-    if (!chartRef.current || !isInitialized || !data.length) return;
+    if (!chartRef.current || !isInitialised || !data.length) return;
 
     const root = chartRef.current;
     const chart = root.container.children.getIndex(0) as am5map.MapChart;
@@ -162,7 +162,7 @@ const Map = ({ data, sentimentType, onRegionClick, onRegionHover }: MapProps) =>
 
     // Force redraw
     polygonSeries.appear(1000, 100);
-  }, [data, sentimentType, isInitialized]);
+  }, [data, sentimentType, isInitialised]);
 
   return (
     <div

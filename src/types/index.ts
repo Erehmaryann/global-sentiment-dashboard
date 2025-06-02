@@ -23,7 +23,7 @@ export interface RegionData {
   };
 }
 
-// Sentiment visualization types
+// Sentiment visualisation types
 export type SentimentType = "overall" | "positive" | "neutral" | "negative";
 
 // API response types

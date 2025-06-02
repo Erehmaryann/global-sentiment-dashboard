@@ -54,7 +54,7 @@ export default function Overview() {
               <div className="flex w-full md:flex-row flex-col gap-3 items-center justify-between">
                 <div className="md:w-auto w-full">
                   <CardTitle>Global Sentiment Map</CardTitle>
-                  <CardDescription>Interactive visualization of sentiment data across countries</CardDescription>
+                  <CardDescription>Interactive visualisation of sentiment data across countries</CardDescription>
                 </div>
                 <Controls
                   selectedSentimentType={selectedSentimentType}

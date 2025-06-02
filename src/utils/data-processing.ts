@@ -34,7 +34,7 @@ export function normalizeSentimentData(data: SentimentData[]): SentimentData[] {
   });
 }
 
-// Process data for map visualization based on sentiment type
+// Process data for map visualisation based on sentiment type
 export function processMapData(
   data: SentimentData[],
   sentimentType: SentimentType
